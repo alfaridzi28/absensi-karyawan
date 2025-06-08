@@ -25,12 +25,12 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
         <!--  Header Start -->
-            @include('layouts.topbar')
+          @include('layouts.topbar')
         <!--  Header End -->
         <div class="body-wrapper-inner">
-            <div class="container-fluid">
+          <div class="container-fluid">
             @yield('content')
-            </div>
+          </div>
         </div>
     </div>
   </div>

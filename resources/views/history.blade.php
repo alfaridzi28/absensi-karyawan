@@ -9,7 +9,6 @@
 
     <div class="row mb-3">
       <div class="col-md-4">
-        <!-- <label for="daterange" class="form-label">Filter Tanggal</label> -->
         <input id="daterange" class="form-control" placeholder="Pilih tanggal..." style="cursor:pointer" />
       </div>
     </div>

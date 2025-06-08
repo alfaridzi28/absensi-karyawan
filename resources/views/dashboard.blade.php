@@ -219,11 +219,11 @@
         </p>
     @elseif($userHasAbsenMasuk)
         <p class="fs-4 fw-semibold mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
-            Kamu sudah <strong>absen masuk</strong> hari ini. Terima kasih!
+          Kamu sudah <strong>absen masuk</strong> hari ini. Terima kasih!
         </p>
     @elseif($userHasAbsenIzin)
         <p class="fs-4 fw-semibold mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
-            Kamu telah mengajukan <strong>izin</strong> hari ini. Semoga semuanya baik-baik saja!
+          Kamu telah mengajukan <strong>izin</strong> hari ini. Semoga semuanya baik-baik saja!
         </p>
     @else
       <p class="fs-4 fw-semibold mb-4" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">
