@@ -53,21 +53,22 @@ Aplikasi pencatatan absensi karyawan sederhana untuk keperluan tes teknis **PT D
 | id       | BIGINT       | Primary key                 |
 | username | STRING       | Username login              |
 | password | STRING       | Password terenkripsi        |
-| role     | ENUM/STRING  | Role pengguna (`admin`, `karyawan`) |
+| role     | TINYINT  | Role pengguna (`1=admin`, `2=karyawan`) |
 
 ### Tabel: `absensis`
 
-| Kolom       | Tipe           | Keterangan                            |
-|-------------|----------------|----------------------------------------|
-| id          | BIGINT         | Primary key                           |
-| user_id     | FOREIGN KEY    | Relasi ke tabel users                 |
-| tanggal     | DATE           | Tanggal absensi                       |
-| jam_masuk   | TIME / NULL    | Waktu absen masuk                     |
-| jam_pulang  | TIME / NULL    | Waktu absen pulang                    |
-| type        | STRING         | Tipe absensi (`masuk` / `pulang`)     |
-| bukti       | STRING / NULL  | Path file bukti (jika diunggah)       |
-| notes       | TEXT / NULL    | Catatan tambahan                      |
-| created_at  | TIMESTAMP      | Waktu data dibuat                     |
+| Kolom         | Tipe      | Keterangan                                                       |
+| ------------- | --------- | ---------------------------------------------------------------- |
+| id            | BIGINT    | Primary key, auto increment                                      |
+| user\_id      | BIGINT    | Foreign key ke tabel `users` (user yang absen), onDelete cascade |
+| tanggal       | DATE      | Tanggal absensi                                                  |
+| type          | STRING    | Tipe absensi (boleh null)                                        |
+| notes         | TEXT      | Catatan absensi (boleh null)                                     |
+| bukti         | STRING    | Bukti absensi (misal foto, file) (boleh null)                    |
+| waktu\_masuk  | TIME      | Waktu masuk (boleh null)                                         |
+| waktu\_pulang | TIME      | Waktu pulang (boleh null)                                        |
+| created\_at   | TIMESTAMP | Waktu data dibuat                                                |
+| updated\_at   | TIMESTAMP | Waktu data diubah                                                |
 
 ---
 
