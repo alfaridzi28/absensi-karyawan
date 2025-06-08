@@ -133,3 +133,34 @@ Aplikasi akan berjalan di: [http://localhost:8000](http://localhost:8000)
 | Karyawan | user1    | password |
 
 Anda dapat mengubah atau menambahkan pengguna melalui Seeder atau langsung di database.
+
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+
+# 📥 Cara Import File `.drawio` ke Draw.io (Diagrams.net)
+
+File ini berisi diagram **ERD (Entity Relationship Diagram)** atau skema basis data yang dibuat menggunakan draw.io. Ikuti langkah berikut untuk membuka dan mengedit file `.drawio`.
+
+---
+
+## ✅ Langkah-Langkah Import
+
+### 🔗 Opsi 1: Menggunakan Web App (Rekomendasi)
+1. Buka situs: [https://app.diagrams.net](https://app.diagrams.net)
+2. Pada popup **"Where would you like to save your diagrams?"**, pilih:
+   - ✅ `Device` → lalu klik **"Create New Diagram"**
+3. Klik menu **File** > **Import From** > **Device...**
+4. Pilih file `absensi_karyawan.drawio` dari komputermu.
+5. File akan langsung terbuka dan bisa diedit.
+
+---
+
+## 📂 Struktur File
+File ini berisi 2 tabel utama:
+- `users` — menyimpan data user
+- `absensis` — menyimpan data kehadiran user
+
+Relasi sudah ditambahkan antara tabel-tabel tersebut.
+
+---
